@@ -3,48 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harsh's Blog</title>
+    <title>Harsh Tomar | AI & ML Explorer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FFF8E7; /* Light cream background similar to the image */
+            background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
         }
         
         header {
-            background-color: #FFF8E7;
-            padding: 20px;
+            background-color: #1a1a2e;
+            color: #fff;
+            padding: 40px 20px;
             text-align: center;
-            border-bottom: 1px solid #ddd;
+        }
+        
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
         }
         
         .blog-title {
             font-size: 3em;
             margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #e6e6e6;
+            margin-bottom: 20px;
         }
         
         nav {
             margin: 20px 0;
+            background-color: #16213e;
+            padding: 15px;
+            border-radius: 5px;
         }
         
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #fff;
             font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #4cc9f0;
         }
         
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 40px auto;
             padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
         }
         
         .bio {
             margin-bottom: 30px;
+        }
+        
+        .bio-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .ai-icon {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            background-color: #4cc9f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .divider {
@@ -54,13 +94,28 @@
         
         .social-links {
             margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
         }
         
         .social-links a {
             margin-right: 20px;
             text-decoration: none;
-            color: #333;
+            color: #16213e;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #4cc9f0;
+        }
+        
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
         }
         
         .coming-soon {
@@ -75,29 +130,86 @@
         }
         
         .project-item {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .project-item:hover {
+            transform: translateY(-5px);
         }
         
         .project-item h3 {
-            margin-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #16213e;
+        }
+        
+        .project-links {
+            margin-top: 15px;
+        }
+        
+        .project-links a {
+            display: inline-block;
+            margin-right: 15px;
+            padding: 8px 15px;
+            background-color: #16213e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+        
+        .project-links a:hover {
+            background-color: #4cc9f0;
+        }
+        
+        .tech-tags {
+            margin-top: 10px;
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background-color: #e6f7ff;
+            color: #0072b1;
+            padding: 5px 10px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            border-radius: 15px;
+            font-size: 0.8em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 class="blog-title">Harsh's Blogs</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="blogs.html">Blogs</a>
-            <a href="research.html">Research Notes</a>
-        </nav>
+        <div class="header-content">
+            <h1 class="blog-title">Harsh Tomar</h1>
+            <div class="subtitle">AI & ML Explorer | Computer Vision Enthusiast</div>
+        </div>
     </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="research.html">Research Notes</a>
+    </nav>
     
     <div class="container">
         <div class="bio">
-            <h2>Hi, myself Harsh Tomar</h2>
+            <div class="bio-header">
+                <div class="ai-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"></path>
+                        <rect x="7" y="12" width="2" height="2"></rect>
+                        <rect x="15" y="12" width="2" height="2"></rect>
+                    </svg>
+                </div>
+                <h2>Hi, myself Harsh Tomar</h2>
+            </div>
             <p>A Machine Learning and Computer Vision enthusiast focused on Generative AI development. I build AI-powered solutions using frameworks like Langchain and LlamaIndex.</p>
             <p>Majority of the time either I am learning from research papers or building projects that solve real-world problems :)</p>
         </div>
@@ -110,19 +222,46 @@
             <div class="project-item">
                 <h3>Field Fusion — AI-powered Computer Vision System</h3>
                 <p>A game-changing computer vision system that uses AI to decode sports games, revealing hidden insights for coaches, players, and fans.</p>
-                <p><strong>Technologies:</strong> Supervision, Ultralytics, OpenCV</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Supervision</span>
+                    <span class="tech-tag">Ultralytics</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">YOLO</span>
+                    <span class="tech-tag">Computer Vision</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HarshTomar1234/field-fusion" target="_blank">View on GitHub</a>
+                    <a href="#" target="_blank">Demo</a>
+                </div>
             </div>
             
             <div class="project-item">
                 <h3>Breast Cancer Predictor — Streamlit Application</h3>
                 <p>A machine learning-powered tool to assist medical professionals in diagnosing breast cancer.</p>
-                <p><strong>Technologies:</strong> Langchain, Streamlit</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Langchain</span>
+                    <span class="tech-tag">Streamlit</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Healthcare</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HarshTomar1234/breast-cancer-predictor" target="_blank">View on GitHub</a>
+                </div>
             </div>
             
             <div class="project-item">
                 <h3>Face-Recognition-Attendance-Detector</h3>
                 <p>An automated system to track and record attendance by identifying individuals based on facial features.</p>
-                <p><strong>Technologies:</strong> face recognition, dlib, Firebase, OpenCV, YOLO</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Face Recognition</span>
+                    <span class="tech-tag">dlib</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">YOLO</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/HarshTomar1234/face-recognition-attendance" target="_blank">View on GitHub</a>
+                </div>
             </div>
         </div>
         
@@ -130,9 +269,24 @@
         
         <div class="social-links">
             <p>Here are my socials, if you are searching :)</p>
-            <a href="https://x.com/kernel_crush">X</a>
-            <a href="https://github.com/HarshTomar1234">GitHub</a>
-            <a href="https://www.linkedin.com/in/harsh-tomar-a96a38256/">LinkedIn</a>
+            <a href="https://x.com/kernel_crush" target="_blank">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                </svg>
+                X.com
+            </a>
+            <a href="https://github.com/HarshTomar1234" target="_blank">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/harsh-tomar-a96a38256/" target="_blank">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                LinkedIn
+            </a>
         </div>
         
         <div class="coming-soon">

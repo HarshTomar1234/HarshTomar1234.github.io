@@ -3,69 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Notes - Harsh's Blog</title>
+    <title>Research Notes | Harsh Tomar</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FFF8E7;
+            background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
         }
         
         header {
-            background-color: #FFF8E7;
-            padding: 20px;
+            background-color: #1a1a2e;
+            color: #fff;
+            padding: 40px 20px;
             text-align: center;
-            border-bottom: 1px solid #ddd;
+        }
+        
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
         }
         
         .blog-title {
             font-size: 3em;
             margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #e6e6e6;
+            margin-bottom: 20px;
         }
         
         nav {
             margin: 20px 0;
+            background-color: #16213e;
+            padding: 15px;
+            border-radius: 5px;
         }
         
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #fff;
             font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #4cc9f0;
         }
         
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 40px auto;
             padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
         }
         
         .coming-soon {
             text-align: center;
-            margin-top: 100px;
-            font-size: 1.5em;
-            color: #888;
+            margin: 100px 0;
+        }
+        
+        .coming-soon-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+            color: #4cc9f0;
+        }
+        
+        .coming-soon h2 {
+            color: #16213e;
+            margin-bottom: 15px;
+        }
+        
+        .coming-soon p {
+            color: #666;
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1 class="blog-title">Harsh's Blog</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="blogs.html">Blogs</a>
-            <a href="research.html">Research Notes</a>
-        </nav>
+        <div class="header-content">
+            <h1 class="blog-title">Harsh Tomar</h1>
+            <div class="subtitle">AI & ML Explorer | Computer Vision Enthusiast</div>
+        </div>
     </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="research.html">Research Notes</a>
+    </nav>
     
     <div class="container">
         <div class="coming-soon">
-            <p>Research notes coming soon!</p>
-            <p>I'll be sharing insights from papers on Computer Vision, NLP, and Deep Learning.</p>
-            <p>Stay tuned!</p>
+            <div class="coming-soon-icon">📚</div>
+            <h2>Research Notes Coming Soon!</h2>
+            <p>I'll be sharing my insights and summaries from research papers on Computer Vision, NLP, and Deep Learning.</p>
+            <p>Stay tuned for breakdowns of cutting-edge research in AI and ML!</p>
         </div>
     </div>
 </body>

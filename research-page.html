@@ -3,49 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Research Notes | Harsh Tomar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet"/>
+  <title>Research Notes</title>
   <script src="https://kit.fontawesome.com/a2e0e6cfd6.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f9fa;
-      color: #333;
+      background-color: #f5f6fa;
     }
 
     header {
       background-color: #1a1a2e;
       color: white;
+      padding: 30px 20px;
       text-align: center;
-      padding: 40px 20px;
-    }
-
-    .blog-title {
-      font-size: 2.8em;
-      margin: 0;
-    }
-
-    .subtitle {
-      font-size: 1.1em;
-      color: #ccc;
-      margin-top: 10px;
     }
 
     nav {
-      background-color: #16213e;
-      padding: 15px;
+      background-color: #0f1b3d;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      padding: 12px 0;
     }
 
     nav a {
       color: white;
+      margin: 0 20px;
       text-decoration: none;
-      font-size: 1.1em;
-      transition: 0.3s;
+      font-weight: 500;
     }
 
     nav a:hover {
@@ -55,97 +41,103 @@
     .container {
       max-width: 900px;
       margin: 40px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 0 20px;
     }
 
-    .research-header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      color: #1a1a2e;
       margin-bottom: 20px;
     }
 
-    .research-header i {
-      font-size: 2em;
-      color: #4cc9f0;
+    .tags {
+      margin-top: 15px;
     }
 
-    .project-item {
-      margin-top: 30px;
-    }
-
-    .project-item h3 {
-      margin: 0 0 10px;
+    .tag {
+      display: inline-block;
+      background-color: #a0e7e5;
       color: #1a1a2e;
-    }
-
-    .tech-tags {
-      margin: 15px 0;
-    }
-
-    .tech-tag {
-      display: inline-block;
-      background-color: #e0f7ff;
-      color: #0077b6;
+      padding: 6px 12px;
+      border-radius: 8px;
+      margin: 5px 8px 0 0;
       font-size: 0.85em;
-      padding: 5px 10px;
-      margin: 5px 5px 0 0;
-      border-radius: 12px;
     }
 
-    .project-links a {
-      display: inline-block;
-      margin-right: 15px;
-      margin-top: 10px;
-      color: #fff;
+    .btn {
+      display: inline-flex;
+      align-items: center;
       background-color: #1a1a2e;
-      padding: 8px 15px;
-      border-radius: 5px;
+      color: white;
+      padding: 8px 14px;
+      margin-right: 12px;
+      margin-top: 15px;
+      border-radius: 6px;
+      font-size: 0.95em;
       text-decoration: none;
-      transition: background 0.3s;
+      transition: background-color 0.3s ease;
     }
 
-    .project-links a:hover {
+    .btn i {
+      margin-right: 8px;
+      font-size: 1.1em;
+    }
+
+    .btn:hover {
       background-color: #4cc9f0;
+      color: #fff;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1 class="blog-title">Harsh Tomar</h1>
-    <div class="subtitle">AI & ML Explorer | Computer Vision Enthusiast</div>
+    <h1>Harsh Tomar</h1>
+    <p>AI & ML Explorer | Computer Vision Enthusiast</p>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="blogs-page.html">Blogs</a>
+    <a href="#">Blogs</a>
     <a href="research-page.html">Research Notes</a>
   </nav>
 
   <div class="container">
-    <div class="research-header">
-      <i class="fas fa-flask"></i>
-      <h2>Featured Research Projects</h2>
-    </div>
+    <div class="card">
+      <h2>Research Papers Implementation</h2>
+      <div class="card-inner">
+        <h3>Vision Transformers</h3>
+        <p>
+          Vision Transformers (ViT) apply the Transformer architecture, originally designed for natural language processing, to image classification tasks.
+          The key idea is to split an image into fixed-size patches, linearly embed each patch, add position embeddings, and feed the resulting sequence
+          of vectors to a standard Transformer encoder.
+        </p>
 
-    <div class="project-item">
-      <h3>Vision Transformers</h3>
-      <p>Vision Transformers (ViT) apply the Transformer architecture, originally designed for natural language processing, to image classification tasks. The key idea is to split an image into fixed-size patches, linearly embed each patch, add position embeddings, and feed the resulting sequence of vectors to a standard Transformer encoder.</p>
-      <div class="tech-tags">
-        <span class="tech-tag">Attention Mechanism</span>
-        <span class="tech-tag">CNNs</span>
-        <span class="tech-tag">MSA</span>
-        <span class="tech-tag">Residual Connections</span>
-        <span class="tech-tag">PyTorch</span>
-      </div>
-      <div class="project-links">
-        <a href="https://arxiv.org/abs/2010.11929" target="_blank">Research Paper</a>
-        <a href="https://github.com/HarshTomar1234/vision_transformer-VIT-" target="_blank">View on GitHub</a>
+        <div class="tags">
+          <span class="tag">Attention Mechanism</span>
+          <span class="tag">CNNs</span>
+          <span class="tag">Multi-head Self-Attention (MSA)</span>
+          <span class="tag">Residual Connections</span>
+          <span class="tag">PyTorch</span>
+        </div>
+
+        <a class="btn" href="https://arxiv.org/abs/2010.11929" target="_blank">
+          <i class="fas fa-file-alt"></i> Research Paper
+        </a>
+        <a class="btn" href="https://github.com/HarshTomar1234/vision_transformer-VIT-" target="_blank">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
       </div>
     </div>
   </div>
+
 </body>
 </html>

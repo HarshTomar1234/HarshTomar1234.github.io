@@ -4,139 +4,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Research Notes | Harsh Tomar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a2e0e6cfd6.js" crossorigin="anonymous"></script>
   <style>
-    /* Base Styles */
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f8f9fa;
       color: #333;
-      line-height: 1.6;
     }
 
-    /* Header */
     header {
       background-color: #1a1a2e;
-      color: #fff;
-      padding: 40px 20px;
+      color: white;
       text-align: center;
-    }
-
-    .header-content {
-      max-width: 800px;
-      margin: 0 auto;
+      padding: 40px 20px;
     }
 
     .blog-title {
-      font-size: 3em;
-      margin-bottom: 10px;
+      font-size: 2.8em;
+      margin: 0;
     }
 
     .subtitle {
-      font-size: 1.2em;
-      color: #e6e6e6;
-      margin-bottom: 20px;
+      font-size: 1.1em;
+      color: #ccc;
+      margin-top: 10px;
     }
 
-    /* Navigation */
     nav {
       background-color: #16213e;
       padding: 15px;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
     }
 
     nav a {
-      margin: 0 15px;
+      color: white;
       text-decoration: none;
-      color: #fff;
-      font-size: 1.2em;
-      transition: color 0.3s;
+      font-size: 1.1em;
+      transition: 0.3s;
     }
 
     nav a:hover {
       color: #4cc9f0;
     }
 
-    /* Container */
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 5px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
-    /* Research Papers Section */
-    .research-papers h2 {
-      color: #16213e;
+    .research-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
       margin-bottom: 20px;
     }
 
-    .project-item {
-      margin-top: 20px;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background-color: #fefefe;
-      transition: transform 0.3s, box-shadow 0.3s;
+    .research-header i {
+      font-size: 2em;
+      color: #4cc9f0;
     }
 
-    .project-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    .project-item {
+      margin-top: 30px;
     }
 
     .project-item h3 {
-      margin-top: 0;
+      margin: 0 0 10px;
+      color: #1a1a2e;
     }
 
     .tech-tags {
-      margin: 10px 0;
+      margin: 15px 0;
     }
 
     .tech-tag {
       display: inline-block;
-      background-color: #4cc9f0;
-      color: white;
+      background-color: #e0f7ff;
+      color: #0077b6;
+      font-size: 0.85em;
       padding: 5px 10px;
-      border-radius: 3px;
-      font-size: 0.9em;
-      margin: 3px 5px 3px 0;
+      margin: 5px 5px 0 0;
+      border-radius: 12px;
     }
 
     .project-links a {
       display: inline-block;
       margin-right: 15px;
-      color: #16213e;
-      text-decoration: underline;
-      transition: color 0.3s;
+      margin-top: 10px;
+      color: #fff;
+      background-color: #1a1a2e;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
     }
 
     .project-links a:hover {
-      color: #4cc9f0;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 600px) {
-      .blog-title {
-        font-size: 2em;
-      }
-
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
+      background-color: #4cc9f0;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-content">
-      <h1 class="blog-title">Harsh Tomar</h1>
-      <div class="subtitle">AI & ML Explorer | Computer Vision Enthusiast</div>
-    </div>
+    <h1 class="blog-title">Harsh Tomar</h1>
+    <div class="subtitle">AI & ML Explorer | Computer Vision Enthusiast</div>
   </header>
 
   <nav>
@@ -146,26 +126,26 @@
   </nav>
 
   <div class="container">
-    <div class="research-papers">
-      <h2>Research Papers Implementation</h2>
-
-      <div class="project-item">
-        <h3>Vision Transformers</h3>
-        <p>Vision Transformers (ViT) apply the Transformer architecture, originally designed for natural language processing, to image classification tasks. The key idea is to split an image into fixed-size patches, linearly embed each patch, add position embeddings, and feed the resulting sequence of vectors to a standard Transformer encoder.</p>
-        <div class="tech-tags">
-          <span class="tech-tag">Attention Mechanism</span>
-          <span class="tech-tag">CNNs</span>
-          <span class="tech-tag">Multi-head Self-Attention (MSA)</span>
-          <span class="tech-tag">Residual Connections</span>
-          <span class="tech-tag">PyTorch</span>
-        </div>
-        <div class="project-links">
-          <a href="https://arxiv.org/abs/2010.11929" target="_blank">Research Paper</a>
-          <a href="https://github.com/HarshTomar1234/vision_transformer-VIT-" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-
-      <!-- Add more project items here -->
-
+    <div class="research-header">
+      <i class="fas fa-flask"></i>
+      <h2>Featured Research Projects</h2>
     </div>
-  </div 
+
+    <div class="project-item">
+      <h3>Vision Transformers</h3>
+      <p>Vision Transformers (ViT) apply the Transformer architecture, originally designed for natural language processing, to image classification tasks. The key idea is to split an image into fixed-size patches, linearly embed each patch, add position embeddings, and feed the resulting sequence of vectors to a standard Transformer encoder.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">Attention Mechanism</span>
+        <span class="tech-tag">CNNs</span>
+        <span class="tech-tag">MSA</span>
+        <span class="tech-tag">Residual Connections</span>
+        <span class="tech-tag">PyTorch</span>
+      </div>
+      <div class="project-links">
+        <a href="https://arxiv.org/abs/2010.11929" target="_blank">Research Paper</a>
+        <a href="https://github.com/HarshTomar1234/vision_transformer-VIT-" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

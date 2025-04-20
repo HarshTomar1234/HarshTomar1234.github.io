@@ -2,40 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Research Notes</title>
-  <script src="https://kit.fontawesome.com/a2e0e6cfd6.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Projects | Harsh Tomar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f6fa;
+      background-color: #f4f6f9;
     }
 
-    header {
-      background-color: #1a1a2e;
-      color: white;
-      padding: 30px 20px;
+    .header {
+      background-color: #1a1d3b;
+      color: #fff;
+      padding: 40px 0;
       text-align: center;
     }
 
-    nav {
-      background-color: #0f1b3d;
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .navbar {
+      background-color: #0e1a3b;
       display: flex;
       justify-content: center;
-      padding: 12px 0;
+      padding: 10px 0;
     }
 
-    nav a {
-      color: white;
-      margin: 0 20px;
+    .navbar a {
+      color: #fff;
       text-decoration: none;
+      padding: 12px 20px;
       font-weight: 500;
+      transition: background 0.3s;
     }
 
-    nav a:hover {
-      color: #4cc9f0;
+    .navbar a:hover {
+      background-color: #293f71;
+      border-radius: 8px;
     }
 
     .container {
@@ -44,98 +56,112 @@
       padding: 0 20px;
     }
 
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    h2 {
+      color: #0e1a3b;
       margin-bottom: 30px;
     }
 
-    h2 {
-      font-size: 1.6em;
-      color: #1a1a2e;
-      margin-bottom: 20px;
+    .card {
+      background-color: #fff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #1a1d3b;
+    }
+
+    .card p {
+      line-height: 1.6;
+      margin-bottom: 15px;
     }
 
     .tags {
-      margin-top: 15px;
+      margin: 10px 0 20px;
     }
 
     .tag {
       display: inline-block;
-      background-color: #a0e7e5;
-      color: #1a1a2e;
+      background-color: #cceeff;
+      color: #003344;
       padding: 6px 12px;
-      border-radius: 8px;
-      margin: 5px 8px 0 0;
-      font-size: 0.85em;
+      margin: 5px 5px 0 0;
+      border-radius: 20px;
+      font-size: 0.85rem;
     }
 
     .btn {
-      display: inline-flex;
-      align-items: center;
-      background-color: #1a1a2e;
-      color: white;
-      padding: 8px 14px;
-      margin-right: 12px;
-      margin-top: 15px;
-      border-radius: 6px;
-      font-size: 0.95em;
+      display: inline-block;
+      padding: 10px 16px;
+      margin-right: 10px;
+      background-color: #0e1a3b;
+      color: #fff;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      border-radius: 8px;
+      transition: background-color 0.3s;
     }
 
     .btn i {
-      margin-right: 8px;
-      font-size: 1.1em;
+      margin-right: 6px;
     }
 
     .btn:hover {
-      background-color: #4cc9f0;
-      color: #fff;
+      background-color: #1e2f5f;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <div class="header">
     <h1>Harsh Tomar</h1>
     <p>AI & ML Explorer | Computer Vision Enthusiast</p>
-  </header>
+  </div>
 
-  <nav>
+  <div class="navbar">
     <a href="index.html">Home</a>
     <a href="#">Blogs</a>
     <a href="research-page.html">Research Notes</a>
-  </nav>
+  </div>
 
   <div class="container">
+    <h2>Research Papers Implementation</h2>
+
+    <!-- Project 1: Vision Transformers -->
     <div class="card">
-      <h2>Research Papers Implementation</h2>
-      <div class="card-inner">
-        <h3>Vision Transformers</h3>
-        <p>
-          Vision Transformers (ViT) apply the Transformer architecture, originally designed for natural language processing, to image classification tasks.
-          The key idea is to split an image into fixed-size patches, linearly embed each patch, add position embeddings, and feed the resulting sequence
-          of vectors to a standard Transformer encoder.
-        </p>
-
-        <div class="tags">
-          <span class="tag">Attention Mechanism</span>
-          <span class="tag">CNNs</span>
-          <span class="tag">Multi-head Self-Attention (MSA)</span>
-          <span class="tag">Residual Connections</span>
-          <span class="tag">PyTorch</span>
-        </div>
-
-        <a class="btn" href="https://arxiv.org/abs/2010.11929" target="_blank">
-          <i class="fas fa-file-alt"></i> Research Paper
-        </a>
-        <a class="btn" href="https://github.com/HarshTomar1234/vision_transformer-VIT-" target="_blank">
-          <i class="fab fa-github"></i> View on GitHub
-        </a>
+      <h3>Vision Transformers</h3>
+      <p>
+        Vision Transformers (ViT) apply the Transformer architecture, originally designed for natural language processing, to image classification tasks. The key idea is to split an image into fixed-size patches, linearly embed each patch, add position embeddings, and feed the resulting sequence of vectors to a standard Transformer encoder.
+      </p>
+      <div class="tags">
+        <span class="tag">Attention Mechanism</span>
+        <span class="tag">CNNs</span>
+        <span class="tag">Multi-head Self-Attention (MSA)</span>
+        <span class="tag">Residual Connections</span>
+        <span class="tag">PyTorch</span>
       </div>
+      <a class="btn" href="https://arxiv.org/abs/2010.11929" target="_blank"><i class="fas fa-file-alt"></i> Research Paper</a>
+      <a class="btn" href="https://github.com/HarshTomar1234/Vision-Transformer-ViT-PyTorch" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+    </div>
+
+    <!-- Project 2: LoRA & QLoRA -->
+    <div class="card">
+      <h3>LoRA & QLoRA in PyTorch</h3>
+      <p>
+        Implementation of Low-Rank Adaptation (LoRA) and Quantized LoRA (QLoRA) techniques in PyTorch. These methods optimize large language model fine-tuning by reducing memory usage and training time, making them suitable for resource-constrained environments.
+      </p>
+      <div class="tags">
+        <span class="tag">LoRA</span>
+        <span class="tag">QLoRA</span>
+        <span class="tag">Parameter Efficient Fine-Tuning</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">LLMs</span>
+        <span class="tag">Quantization</span>
+      </div>
+      <a class="btn" href="https://arxiv.org/abs/2106.09685" target="_blank"><i class="fas fa-file-alt"></i> Research Paper</a>
+      <a class="btn" href="https://github.com/HarshTomar1234/PyTorch-LoRA-QLoRA" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
     </div>
   </div>
 
